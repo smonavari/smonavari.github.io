@@ -2,70 +2,199 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  color: #000;
+  color: #111;
   background-color: #fff;
-  line-height: 1.6;
+  line-height: 1.7;
 }
-
 .container {
-  max-width: 800px;
+  max-width: 820px;
   margin: auto;
   padding: 2rem;
 }
 
+/* Header & Nav */
 header {
-  border-bottom: 1px solid #000;
-  padding: 1.5rem 2rem 0.5rem;
+  border-bottom: 2px solid #111;
+  padding: 1.5rem 2rem 0.75rem;
   text-align: center;
 }
-
 header h1 {
   margin: 0;
   font-size: 2rem;
+  letter-spacing: 0.01em;
 }
-
 nav {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
-
 nav a {
-  color: #000;
+  color: #111;
   text-decoration: none;
   margin: 0 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
+/* Sections */
 main section {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+main section:last-of-type {
+  border-bottom: none;
+}
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+h3.subsection {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
+/* Profile */
 .profile {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 2.5rem;
 }
-
 .profile-photo {
   width: 140px;
-  border-radius: 100%;
-  border: 1px solid #000;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
 }
-
-.profile-text h2 {
+.profile-text p:first-child {
   margin-top: 0;
 }
 
-ul {
+/* Interests grid */
+.interests-grid {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+.interests-grid h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+.interests-grid ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+.interests-grid ul li {
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+}
+
+/* Education table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.edu-table tr {
+  border-bottom: 1px solid #eee;
+}
+.edu-table td {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.edu-degree {
+  font-style: italic;
+  width: 35%;
+}
+.edu-inst {
+  width: 45%;
+}
+.edu-year {
+  text-align: right;
+  white-space: nowrap;
+  color: #555;
+  width: 20%;
+}
+
+/* Papers */
+.paper-list {
+  list-style: none;
+  padding: 0;
+}
+.paper-list li {
+  margin-bottom: 1.5rem;
   padding-left: 1rem;
+  border-left: 2px solid #111;
+}
+.paper-list p {
+  margin: 0.2rem 0;
+}
+.paper-title {
+  font-style: italic;
+  font-weight: bold;
+}
+.paper-meta {
+  font-size: 0.9rem;
+  color: #444;
 }
 
+/* General lists */
+ul {
+  padding-left: 1.2rem;
+}
 ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
+/* Links */
+a {
+  color: #111;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid #000;
-  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-photo {
+    width: 120px;
+  }
+  .interests-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .edu-table td {
+    display: block;
+    width: 100%;
+  }
+  .edu-year {
+    text-align: left;
+  }
 }

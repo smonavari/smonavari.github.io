@@ -2,182 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sedigheh Monavari — Quantitative Marketing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="layout">
+  <nav class="nav" aria-label="Page sections">
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+    </div>
+  </nav>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="sidebar-inner">
+  <div class="page">
 
-        <div class="identity">
-          <img src="photo.jpg" alt="Sedigheh Monavari" class="profile-photo" />
-          <h1>Sedigheh<br><span class="name-alt">(Sedi)</span><br>Monavari</h1>
-          <p class="title-line">PhD Candidate<br>Quantitative Marketing</p>
-          <p class="institution">Warwick Business School<br>University of Warwick</p>
-          <span class="jm-badge">Job Market 2026&ndash;27</span>
+    <header class="profile">
+      <div class="profile-text">
+        <h1>Sedigheh Monavari</h1>
+        <p class="aka">Sedi</p>
+        <p class="role">PhD Candidate in Quantitative Marketing</p>
+        <p class="org">Warwick Business School, University of Warwick</p>
+        <p class="jm">Job Market 2026&ndash;27</p>
+        <div class="contact">
+          <p>Department of Marketing, Warwick Business School<br />
+          University of Warwick, Scarman Rd, Coventry, UK CV4 7AL</p>
+          <p>
+            <a href="mailto:sedigheh.monavari@wbs.ac.uk">sedigheh.monavari@wbs.ac.uk</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/sedigheh-monavari-38822039/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="cv.pdf" download>CV (PDF)</a>
+          </p>
         </div>
-
-        <nav>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#research">Research</a>
-          <a href="#teaching">Teaching</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="sidebar-section">
-          <h4>Research Topics</h4>
-          <ul>
-            <li>Pricing &amp; Promotions</li>
-            <li>Digital Platforms</li>
-            <li>Promotional Timing</li>
-            <li>Consumer Health</li>
-            <li>Consumer Sentiment</li>
-          </ul>
-        </div>
-
-        <div class="sidebar-section">
-          <h4>Methods</h4>
-          <ul>
-            <li>Causal Inference</li>
-            <li>Econometrics</li>
-            <li>Meta-Analysis</li>
-            <li>Machine Learning</li>
-            <li>LLM Simulations</li>
-          </ul>
-        </div>
-
-        <div class="sidebar-contact">
-          <a href="mailto:sedigheh.monavari@wbs.ac.uk">sedigheh.monavari@wbs.ac.uk</a>
-          <a href="https://github.com/sedigheh" target="_blank">github.com/sedigheh</a>
-          <a href="https://www.linkedin.com/in/sedigheh-monavari-38822039/" target="_blank">LinkedIn</a>
-        </div>
-
       </div>
-    </aside>
+      <img class="photo" src="photo.jpg" alt="Sedigheh Monavari" width="148" height="185" />
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="content">
+    <p class="tags">
+      <span class="tag-group"><span class="tag-label">Research</span> Pricing &amp; promotions, digital platforms, promotional timing, consumer health, consumer sentiment</span>
+      <span class="tag-group"><span class="tag-label">Methods</span> Causal inference, econometrics, meta-analysis, machine learning, LLM simulations</span>
+    </p>
+
+    <main>
 
       <section id="about">
-        <p class="lede">
-          I am a PhD Candidate in Quantitative Marketing at Warwick Business School, supervised by
-          Dr. Iman Ahmadi, Prof. Nick Lee, and Prof.John Rudd.
-        </p>
+        <h2>About</h2>
         <p>
-          My research examines how platform-mediated offers interact with consumer expectations, with a focus on promotional pricing strategies, digital platform design, and consumer health. I combine large-scale observational data with causal inference and machine learning to study consumer behaviour in digital environments.
+          I am a PhD Candidate in Quantitative Marketing at Warwick Business School, supervised by
+          Dr. Iman Ahmadi, Prof. Nick Lee, and Prof. John Rudd. My research examines how platform-mediated offers interact with consumer expectations, with a focus on promotional pricing strategies, digital platform design, and consumer health. I combine large-scale observational data with causal inference and machine learning to study consumer behaviour in digital environments.
         </p>
       </section>
 
       <section id="education">
         <h2>Education</h2>
-        <table class="edu-table">
-          <tr>
-            <td class="edu-degree">Ph.D., Marketing <span class="tag">Candidate</span></td>
-            <td class="edu-inst">Warwick Business School</td>
-            <td class="edu-year">2024&ndash;2027</td>
-          </tr>
-          <tr>
-            <td class="edu-degree">M.Res., Business &amp; Management</td>
-            <td class="edu-inst">Warwick Business School</td>
-            <td class="edu-year">2024</td>
-          </tr>
-          <tr>
-            <td class="edu-degree">MSc, Business Administration</td>
-            <td class="edu-inst">Amirkabir University of Technology</td>
-            <td class="edu-year">2021</td>
-          </tr>
-          <tr>
-            <td class="edu-degree">BSc, Software Engineering</td>
-            <td class="edu-inst">Sharif University of Technology</td>
-            <td class="edu-year">2016</td>
-          </tr>
-        </table>
+        <ul class="entries">
+          <li>
+            <span class="year">2024&ndash;2027</span>
+            <div>
+              <p class="entry-title">Ph.D., Marketing <em>(Candidate)</em></p>
+              <p class="entry-sub">Warwick Business School</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2024</span>
+            <div>
+              <p class="entry-title">M.Res., Business &amp; Management</p>
+              <p class="entry-sub">Warwick Business School</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2021</span>
+            <div>
+              <p class="entry-title">MSc, Business Administration</p>
+              <p class="entry-sub">Amirkabir University of Technology</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2016</span>
+            <div>
+              <p class="entry-title">BSc, Software Engineering</p>
+              <p class="entry-sub">Sharif University of Technology</p>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section id="research">
         <h2>Research</h2>
 
-        <h3 class="subsection">Working Papers</h3>
+        <h3>Working Papers</h3>
 
-        <div class="paper">
-          <p class="paper-title">"Planned vs. Impulse: Discount Format"</p>
-          <p class="paper-meta">With Iman Ahmadi, Nick Lee, and John Rudd &nbsp;&middot;&nbsp; <strong>Job Market Paper</strong></p>
-          <p class="paper-abstract">This paper examines how planned (future-redeemable) versus immediate discount formats differentially shape consumer spending and purchase behaviour. Using a 17-month panel dataset of approximately 45,000 users from a digital platform, we show that the two formats operate through different primary intervention points, generating divergent effects on monthly spend and basket value.</p>
-        </div>
+        <article class="pub">
+          <h4>&ldquo;Planned vs. Impulse: Discount Format&rdquo;</h4>
+          <p class="pub-meta">With Iman Ahmadi, Nick Lee, and John Rudd. <strong>Job Market Paper.</strong></p>
+          <p class="pub-text">This paper examines how planned (future-redeemable) versus immediate discount formats differentially shape consumer spending and purchase behaviour. Using a 17-month panel dataset of approximately 45,000 users from a digital platform, we show that the two formats operate through different primary intervention points, generating divergent effects on monthly spend and basket value.</p>
+        </article>
 
-        <div class="paper">
-          <p class="paper-title">"Decomposing Promotional Timing: When Discounts Are Given, When Rewards Arrive, and Why the Difference Matters"</p>
-          <p class="paper-meta">Working Paper, 2026</p>
-          <p class="paper-abstract">A meta-analysis of effect sizes from academic papers (2017&ndash;2026) decomposing promotional timing into signalling (immediate vs. planned) and reward delivery (instant vs. delayed). Results indicate that reward timing is the primary driver of effectiveness, and that the disadvantage of delayed rewards is almost entirely offset when consumers receive advance notice, allowing for anticipatory mental accounting.</p>
-        </div>
+        <article class="pub">
+          <h4>&ldquo;Decomposing Promotional Timing: When Discounts Are Given, When Rewards Arrive, and Why the Difference Matters&rdquo;</h4>
+          <p class="pub-meta">Working Paper, 2026.</p>
+          <p class="pub-text">A meta-analysis of effect sizes from academic papers (2017&ndash;2026) decomposing promotional timing into signalling (immediate vs. planned) and reward delivery (instant vs. delayed). Results indicate that reward timing is the primary driver of effectiveness, and that the disadvantage of delayed rewards is almost entirely offset when consumers receive advance notice, allowing for anticipatory mental accounting.</p>
+        </article>
 
-        <div class="paper">
-          <p class="paper-title">"Beyond Single LLMs: Using Model Ensembles to Improve Synthetic Data in Marketing Experiments"</p>
-          <p class="paper-meta">With Mohammad Sheikhian, Marco Gregori, and Iman Ahmadi</p>
-          <p class="paper-abstract">We evaluate the extent to which multi-model synthetic data generation (ensembles) improves alignment with human behaviour across diverse marketing experiments, providing a more robust alternative to single-model simulations.</p>
-        </div>
+        <article class="pub">
+          <h4>&ldquo;Beyond Single LLMs: Using Model Ensembles to Improve Synthetic Data in Marketing Experiments&rdquo;</h4>
+          <p class="pub-meta">With Mohammad Sheikhian, Marco Gregori, and Iman Ahmadi.</p>
+          <p class="pub-text">We evaluate the extent to which multi-model synthetic data generation (ensembles) improves alignment with human behaviour across diverse marketing experiments, providing a more robust alternative to single-model simulations.</p>
+        </article>
 
-        <h3 class="subsection">Research in Progress</h3>
+        <h3>Research in Progress</h3>
 
+        <article class="pub">
+          <h4>&ldquo;Real-Time Polling and Consumer Choice: Predicting Marketplace Shifts&rdquo;</h4>
+          <p class="pub-meta">With Mohammad Sheikhian, Marco Gregori, and Iman Ahmadi.</p>
+        </article>
 
+        <h3>Conference Presentations</h3>
 
-        <div class="paper">
-          <p class="paper-title">"Real-Time Polling and Consumer Choice: Predicting Marketplace Shifts"</p>
-          <p class="paper-abstract"></p>
-        </div>
-
-        <h3 class="subsection">Conference Presentations</h3>
-        <ul class="conf-list">
+        <ul class="entries">
           <li>
-            <span class="conf-year">2026</span>
-            <span class="conf-detail">"Beyond Single LLMs: Using Model Ensembles to Improve Synthetic Data in Marketing Experiments" &mdash; INFORMS Marketing Science (ISMS). <em>Oral Presentation (Upcoming).</em></span>
+            <span class="year">2026</span>
+            <div>
+              <p class="entry-title">&ldquo;Beyond Single LLMs: Using Model Ensembles to Improve Synthetic Data in Marketing Experiments&rdquo;</p>
+              <p class="entry-sub">INFORMS Marketing Science (ISMS). <em>Oral presentation (upcoming).</em></p>
+            </div>
           </li>
           <li>
-            <span class="conf-year">2023</span>
-            <span class="conf-detail">"Beyond the Bargain: Deciphering the Complexities of Food Choices" &mdash; European Marketing Academy (EMAC). <em>Poster.</em></span>
+            <span class="year">2023</span>
+            <div>
+              <p class="entry-title">&ldquo;Beyond the Bargain: Deciphering the Complexities of Food Choices&rdquo;</p>
+              <p class="entry-sub">European Marketing Academy (EMAC). <em>Poster.</em></p>
+            </div>
           </li>
         </ul>
       </section>
 
       <section id="teaching">
         <h2>Teaching</h2>
-        <ul class="teaching-list">
+        <ul class="entries">
           <li>
-            <span class="course-name">Marketing and Strategy Analytics</span>
-            <span class="course-meta">Graduate Teaching Assistant &middot; MSc &middot; Warwick Business School &middot; 2025, rating: 4.3</span>
-            <span class="course-meta">Graduate Teaching Assistant &middot; MSc &middot; Warwick Business School &middot; 2024.</span>
-
+            <div>
+              <p class="entry-title">Marketing and Strategy Analytics</p>
+              <p class="entry-sub">Graduate Teaching Assistant, MSc, Warwick Business School, 2025 (rating: 4.3) and 2024.</p>
+            </div>
           </li>
           <li>
-            <span class="course-name">Managerial Decision Making</span>
-            <span class="course-meta">Graduate Teaching Assistant &middot; MBA &middot; Amirkabir University of Technology &middot; 2020&ndash;2021</span>
+            <div>
+              <p class="entry-title">Managerial Decision Making</p>
+              <p class="entry-sub">Graduate Teaching Assistant, MBA, Amirkabir University of Technology, 2020&ndash;2021.</p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p class="address">Department of Marketing, Warwick Business School<br>
-        University of Warwick, Scarman Rd<br>
-        Coventry, UK &nbsp;CV4 7AL</p>
-        <p><a href="mailto:sedigheh.monavari@wbs.ac.uk">sedigheh.monavari@wbs.ac.uk</a></p>
-      </section>
-
     </main>
-  </div>
 
-  <footer>
-    <p>&copy; 2026 Sedigheh Monavari &nbsp;&middot;&nbsp; Warwick Business School</p>
-  </footer>
+    <footer>
+      <p>&copy; 2026 Sedigheh Monavari</p>
+    </footer>
+
+  </div>
 
 </body>
 </html>

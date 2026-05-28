@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 /* Modern academic — no borders, spacing + type only */
 
 :root {
@@ -5,16 +7,17 @@
   --surface:   #faf9f6;
   --nav-bg:    rgba(250, 249, 246, 0.9);
   --tint:      #e8eef3;
-  --text:      #1f2933;
+  --text:      #1f2937;
   --soft:      #4a5568;
   --light:     #6b7280;
   --accent:    #4a6678;
   --accent-2:  #6b8a9a;
   --link:      #3d6b85;
   --link-h:    #2f5569;
+  --section-border: #e5e7eb;
 
-  --sans:  'Inter', system-ui, sans-serif;
-  --serif: 'Lora', Georgia, serif;
+  --font-heading: 'Lora', Georgia, serif;
+  --font-body:    'Inter', sans-serif;
 
   --max:   44rem;
   --nav-h: 3.25rem;
@@ -32,8 +35,22 @@ html {
   scroll-padding-top: calc(var(--nav-h) + 1rem);
 }
 
+body,
+p,
+li,
+span {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.nav a {
+  font-family: var(--font-heading);
+}
+
 body {
-  font-family: var(--serif);
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
@@ -83,7 +100,6 @@ img {
 }
 
 .nav a {
-  font-family: var(--sans);
   font-size: 0.84rem;
   font-weight: 500;
   color: var(--soft);
@@ -110,13 +126,12 @@ img {
 .profile {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
 .profile h1 {
-  font-family: var(--sans);
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -124,7 +139,6 @@ img {
 }
 
 .aka {
-  font-family: var(--sans);
   font-size: 0.88rem;
   font-weight: 400;
   color: var(--light);
@@ -132,7 +146,6 @@ img {
 }
 
 .role {
-  font-family: var(--sans);
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
@@ -140,7 +153,6 @@ img {
 }
 
 .org {
-  font-family: var(--sans);
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--soft);
@@ -148,7 +160,6 @@ img {
 }
 
 .jm {
-  font-family: var(--sans);
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--accent);
@@ -157,7 +168,6 @@ img {
 
 .contact {
   margin-top: 1.25rem;
-  font-family: var(--sans);
   font-size: 0.84rem;
   font-weight: 400;
   line-height: 1.55;
@@ -178,7 +188,7 @@ img {
 }
 
 .photo {
-  width: 148px;
+  width: 200px;
   flex-shrink: 0;
   border-radius: 6px;
   box-shadow: 0 8px 24px rgba(74, 102, 120, 0.12);
@@ -187,7 +197,6 @@ img {
 /* ── research / methods line ──────────────────────────── */
 
 .tags {
-  font-family: var(--sans);
   font-size: 0.84rem;
   line-height: 1.55;
   color: var(--soft);
@@ -197,13 +206,16 @@ img {
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 1.25rem;
 }
 
-.tag-label {
-  font-weight: 600;
+.tags h3 {
+  font-size: 0.84rem;
   color: var(--accent);
-  margin-right: 0.35rem;
+}
+
+.tags .section-content {
+  margin-bottom: 0;
 }
 
 /* ── sections ─────────────────────────────────────────── */
@@ -216,28 +228,44 @@ main section:last-of-type {
   margin-bottom: 0;
 }
 
+main h2,
+main h3,
+.tags h3 {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  margin-bottom: 1rem;
+}
+
 main h2 {
-  font-family: var(--sans);
   font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
   color: var(--accent);
-  margin-bottom: 1.25rem;
 }
 
 main h3 {
-  font-family: var(--sans);
   font-size: 0.92rem;
-  font-weight: 600;
   color: var(--accent-2);
-  margin: 2rem 0 1rem;
 }
 
-main h3:first-of-type {
+main h2 + h3 {
   margin-top: 0.5rem;
 }
 
-main > section > p {
+main section > h3 ~ h3 {
+  margin-top: 2rem;
+}
+
+.section-content {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--section-border);
+  margin-bottom: 1.5rem;
+}
+
+main section > .section-content:last-child {
+  margin-bottom: 0;
+}
+
+.section-content p {
   font-size: 1rem;
   color: var(--soft);
 }
@@ -263,7 +291,6 @@ main > section > p {
 }
 
 .year {
-  font-family: var(--sans);
   font-size: 0.84rem;
   font-weight: 500;
   color: var(--accent-2);
@@ -283,7 +310,6 @@ main > section > p {
 }
 
 .entry-sub {
-  font-family: var(--sans);
   font-size: 0.88rem;
   font-weight: 400;
   color: var(--soft);
@@ -316,7 +342,6 @@ main > section > p {
 }
 
 .pub-meta {
-  font-family: var(--sans);
   font-size: 0.84rem;
   color: var(--light);
   margin-bottom: 0.6rem;
@@ -338,7 +363,6 @@ main > section > p {
 footer {
   margin-top: 4rem;
   padding-top: 2rem;
-  font-family: var(--sans);
   font-size: 0.78rem;
   color: var(--light);
   text-align: center;
@@ -366,7 +390,7 @@ footer {
   }
 
   .photo {
-    width: 120px;
+    width: 160px;
   }
 
   .entries li {
